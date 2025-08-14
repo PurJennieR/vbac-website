@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ข่าวสาร — VBAC</title>
+  <meta name="description" content="อัปเดตข่าวสารและประกาศจากวิทยาลัย VBAC">
+  <link rel="stylesheet" href="css/style.css" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDE03CD77G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VDE03CD77G');
+</script>
+
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปเนื้อหา</a>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="โลโก้ VBAC" width="40" height="40">
+        <span>Viboon Business Administration technological College Ramintra</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="เปิดเมนู">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="site-nav" aria-label="หลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="news.html" class="active">ข่าวสาร</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">ติดต่อเรา</a>
+        <button class="dark-toggle" id="darkToggle" aria-pressed="false" title="สลับโหมดกลางคืน">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1 class="page-title">ข่าวสาร</h1>
+
+    <div class="toolbar">
+      <input id="searchNews" type="search" placeholder="ค้นหาข่าว..." aria-label="ค้นหาข่าว">
+      <select id="sortNews" aria-label="เรียงลำดับ">
+        <option value="desc">ใหม่ล่าสุด</option>
+        <option value="asc">เก่าก่อนไปใหม่</option>
+      </select>
+      <label class="switch">
+        <input id="useSheet" type="checkbox">
+        <span class="slider"></span>
+        <span class="switch-label">ใช้ Google Sheet</span>
+      </label>
+    </div>
+
+    <div id="newsList" class="grid-3"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>VBAC College</strong>
+        <p>© 2025 วิทยาลัย VBAC</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="news.html" class="active">ข่าวสาร</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">ติดต่อเรา</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/news.js"></script>
+  <script>
+    initNewsPage();
+  </script>
+</body>
+</html>
